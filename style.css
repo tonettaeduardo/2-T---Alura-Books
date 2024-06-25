@@ -1,23 +1,25 @@
-@import url("style/header.css");
+@import url(style/header.css);
 
 :root{
     --cor-de-fundo: #EBECEE;
-    --branco: #FFFFFF;
+    --braco: #FFFFFF;
 }
 
 body{
     background-color: var(--cor-de-fundo);
 }
 
-.cabecalho-menu-hamburguer{
+.cabecalho_menu-hamburguer{
     width: 24px;
     height: 24px;
-    background-image: url("../img/Menu.svg");
     display: inline-block;
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .cabecalho{
-    background-color: var(--branco);
+    background-color: var(--braco);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,12 +31,16 @@ body{
     align-items: center;
 }
 
-.lista-menu{
+.container_imagem{
+    padding: 1em;
+}
+
+.lista_menu{
     display: none;
     position: absolute;
     top: 100%;
 }
 
-.container-botão:checked ~ .lista-menu {
+.container_botao:checked ~.lista_menu{
     display: block;
 }
