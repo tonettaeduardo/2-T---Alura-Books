@@ -3,10 +3,16 @@
 :root{
     --cor-de-fundo: #EBECEE;
     --braco: #FFFFFF;
+    --laranja: #eb9b00;
+    --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins";
 }
 
 body{
     background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .cabecalho_menu-hamburguer{
@@ -39,8 +45,30 @@ body{
     display: none;
     position: absolute;
     top: 100%;
+    width: 60vw;
 }
 
 .container_botao:checked ~.lista_menu{
     display: block;
+}
+
+.lista_menu-titulo, .lista_menu-item{
+    padding: 1em;
+    background-color: var(--braco);
+}
+
+.lista_menu-titulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista_menu-link{
+    background-color: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+.container_botao{
+    display: none;
 }
