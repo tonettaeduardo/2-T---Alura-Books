@@ -1,10 +1,11 @@
-@import url(style/header.css);
+@import url(styles/header.css);
+@import url(styles/banner.css);
 
 :root{
     --cor-de-fundo: #EBECEE;
-    --braco: #FFFFFF;
+    --branco: #FFFFFF;
     --laranja: #eb9b00;
-    --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    --azul-degrade: linear-gradient(94.54deg, #002f52 35.49%, #326589 165.37%);
     --fonte-principal: "Poppins";
 }
 
@@ -25,7 +26,7 @@ body{
 }
 
 .cabecalho{
-    background-color: var(--braco);
+    background-color: var(--branco);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,7 +55,7 @@ body{
 
 .lista_menu-titulo, .lista_menu-item{
     padding: 1em;
-    background-color: var(--braco);
+    background-color: var(--branco);
 }
 
 .lista_menu-titulo{
@@ -65,7 +66,6 @@ body{
 .lista_menu-link{
     background-color: var(--azul-degrade);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
     text-transform: uppercase;
 }
